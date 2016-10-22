@@ -61,7 +61,7 @@ class InstructionsController: UIViewController
 		trialVersionText.leftAnchor.constraintEqualToAnchor(view.leftAnchor, constant: screenWidth * 0.1).active = true
 		trialVersionText.scrollEnabled = false
 
-		Helper.setupInformativeTextView(fullVersionText, text: "Once you have enabled the keyboard, press setup button below and follow directions to enable full access.\n\n Copypasta keyboard requires full access to verify purchase of the full version. We only have access to Copypasta keyboard's keystrokes and do not record them.", parentView: view)
+		Helper.setupInformativeTextView(fullVersionText, text: "Get the full version from the upgrade tab. Enable the keyboard and allow full access in the setup tab.\n\n Copypasta keyboard requires full access to verify purchase of the full version. We only have access to Copypasta keyboard's keystrokes and do not record them.", parentView: view)
 		fullVersionText.bottomAnchor.constraintEqualToAnchor(view.bottomAnchor, constant: -(TabsController.tabBarHeight + dividerMargin * 0.5)).active = true
 		fullVersionText.rightAnchor.constraintEqualToAnchor(view.rightAnchor, constant: -screenWidth * 0.1).active = true
 		fullVersionText.leftAnchor.constraintEqualToAnchor(view.leftAnchor, constant: screenWidth * 0.1).active = true

@@ -102,7 +102,6 @@ class SetupController: UIViewController
 		 //		testButtonDestroy.hidden = true
 		 //		testButtonPurchase.hidden = true
 		 */
-
 	}
 
 	func isKeyboardExtensionEnabled() -> Bool
@@ -171,13 +170,6 @@ class SetupController: UIViewController
 			screenColorHeader.text = "Enable Keyboard"
 
 		}
-
-		print("Set keychain value to true")
-		let IAPFetch = Keychain(service: "com.roymunsonstudios.CopypastaKeyboard")
-		var purchase: Bool = true
-		let purchaseData = NSData(bytes: &purchase, length: sizeof(Bool))
-		try! IAPFetch.set(purchaseData, key: CopypastaProducts.FullVersion)
-		print("The key is: " + CopypastaProducts.FullVersion)
 
 	}
 

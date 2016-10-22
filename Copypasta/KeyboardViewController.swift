@@ -36,7 +36,7 @@ class KeyboardViewController: UIInputViewController
 	private var keyboardState: Int = 0
 	private var screenWidth: CGFloat = 0.0
 
-	private let tabTitles: [String] = ["I'll have you \n know I am a:", "I identify \n as a:", "That's some:", "_ are \n not _", "Roasts", "More Copypastas", "Faces!"]
+	private let tabTitles: [String] = ["I'll have you \n know I am a:", "I identify \n as a:", "That's some:", "_ are \n not _", /*"Roasts", */		"More Copypastas", "Faces!"]
 
 	private let mainButtonTitles: [[String]] = [
 		["Navy Seal", "Navy Seal (Emoji)", "Atheist",
@@ -55,13 +55,15 @@ class KeyboardViewController: UIInputViewController
 			"Jackdow/Crow", "PC Game/Sport", "Queef/Fart",
 			"Atheist/Scientist", "Jedi/Sith", "Seals/Special Forces"],
 
-		["ABSOLUTELY POINTLESS!", "AT LEAST I DON'T...", "I am a fucking god",
-			"You've won nothing", "roast of the ages", "3rd Warning",
-			"Downvoted", "Your post gave me cancer", "Don't say K"],
+		/*
+		 ["ABSOLUTELY POINTLESS!", "AT LEAST I DON'T...", "I am a fucking god",
+		 "You've won nothing", "roast of the ages", "3rd Warning",
+		 "Downvoted", "Your post gave me cancer", "Don't say K"],
+		 */
 
 		["My nana is still a looker", "I wasted your time", "iPhone is the best console",
 			"Rekt", "Degree 6 zoo sexual", "I r8 8/8",
-			"ULTRA MIX", "I am Russia", "SHITMIX"],
+			"ULTRA MIX", "Copypasta Thief", "SHITMIX"],
 
 		["( ͡° ͜ʖ ͡°)", "¯\\_(ツ)_/¯", "ಠ_ಠ",
 			"( ✖ _ ✖ )", "ᕙ(˵ ಠ ਊ ಠ ˵)ᕗ", "(ノಠ益ಠ)ノ彡┻━┻",
@@ -84,9 +86,12 @@ class KeyboardViewController: UIInputViewController
 			NSLocalizedString("THING4", comment: ""), NSLocalizedString("THING5", comment: ""), NSLocalizedString("THING6", comment: ""),
 			NSLocalizedString("THING7", comment: ""), NSLocalizedString("THING8", comment: ""), NSLocalizedString("THING9", comment: "")],
 
-		[NSLocalizedString("ROAST1", comment: ""), NSLocalizedString("ROAST2", comment: ""), NSLocalizedString("ROAST3", comment: ""),
-			NSLocalizedString("ROAST4", comment: ""), NSLocalizedString("ROAST5", comment: ""), NSLocalizedString("ROAST6", comment: ""),
-			NSLocalizedString("ROAST7", comment: ""), NSLocalizedString("ROAST8", comment: ""), NSLocalizedString("ROAST9", comment: "")],
+		/*
+
+		 [NSLocalizedString("ROAST1", comment: ""), NSLocalizedString("ROAST2", comment: ""), NSLocalizedString("ROAST3", comment: ""),
+		 NSLocalizedString("ROAST4", comment: ""), NSLocalizedString("ROAST5", comment: ""), NSLocalizedString("ROAST6", comment: ""),
+		 NSLocalizedString("ROAST7", comment: ""), NSLocalizedString("ROAST8", comment: ""), NSLocalizedString("ROAST9", comment: "")],
+		 */
 
 		[NSLocalizedString("OTHER1", comment: ""), NSLocalizedString("OTHER2", comment: ""), NSLocalizedString("OTHER3", comment: ""),
 			NSLocalizedString("OTHER4", comment: ""), NSLocalizedString("OTHER5", comment: ""), NSLocalizedString("OTHER6", comment: ""),
@@ -155,8 +160,10 @@ class KeyboardViewController: UIInputViewController
 		tabButtons.append(tB5)
 		let tB6 = UIButton()
 		tabButtons.append(tB6)
-		let tB7 = UIButton()
-		tabButtons.append(tB7)
+		/*
+		 let tB7 = UIButton()
+		 tabButtons.append(tB7)
+		 */
 
 		// Setup button text and properties
 		for tabButton in tabButtons
