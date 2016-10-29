@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qBK-in-v9K">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Setup-->
+        <scene sceneID="WQh-fB-9FF">
+            <objects>
+                <viewController id="v9s-eW-1bC" customClass="SetupController" customModule="Copypasta_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pP7-ZZ-FWs"/>
+                        <viewControllerLayoutGuide type="bottom" id="W9v-6R-7cu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Swy-Xd-R2X">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Setup" image="SettingsIcon" selectedImage="SettingsIcon" id="jOx-1d-BJn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIq-Sv-6j5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="-242"/>
+        </scene>
+        <!--Instructions-->
+        <scene sceneID="tEk-zk-vtB">
+            <objects>
+                <viewController id="RQP-th-oAS" customClass="InstructionsController" customModule="Copypasta_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xD6-3a-DPk"/>
+                        <viewControllerLayoutGuide type="bottom" id="bsi-Tu-QBz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mhW-hL-zd2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Instructions" image="InstructionIcon" id="5Sp-nU-v4R"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SUP-qN-2a0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="647"/>
+        </scene>
+        <!--Upgrade-->
+        <scene sceneID="DtC-Ue-yRy">
+            <objects>
+                <viewController id="49B-Tq-MgY" customClass="FullVersionController" customModule="Copypasta_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QcR-cP-54V"/>
+                        <viewControllerLayoutGuide type="bottom" id="BH1-lU-Vfe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="n00-aV-SVL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Upgrade" image="PurchaseIcon" id="PfQ-6q-Rdi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jt0-Pn-SUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="1667"/>
+        </scene>
+        <!--Ratings-->
+        <scene sceneID="cZh-NH-ccY">
+            <objects>
+                <viewController id="JWT-3t-RaG" customClass="RatingsController" customModule="Copypasta_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="efi-V3-6T7"/>
+                        <viewControllerLayoutGuide type="bottom" id="kqN-aS-Ds1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JhH-7a-bBh" customClass="Instruc">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ratings" image="RateIcon" id="QmP-Fb-40H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hte-PU-stn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="-957"/>
+        </scene>
+        <!--Tabs Controller-->
+        <scene sceneID="hLA-qt-v91">
+            <objects>
+                <tabBarController id="qBK-in-v9K" customClass="TabsController" customModule="Copypasta_Keyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="35E-jB-5NJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="v9s-eW-1bC" kind="relationship" relationship="viewControllers" id="Wy2-qj-3Cp"/>
+                        <segue destination="RQP-th-oAS" kind="relationship" relationship="viewControllers" id="AZ5-bg-DnB"/>
+                        <segue destination="49B-Tq-MgY" kind="relationship" relationship="viewControllers" id="IVB-KQ-wcj"/>
+                        <segue destination="JWT-3t-RaG" kind="relationship" relationship="viewControllers" id="cjf-qT-Jti"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5e3-v4-oKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-160" y="152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="InstructionIcon" width="25" height="25"/>
+        <image name="PurchaseIcon" width="25" height="25"/>
+        <image name="RateIcon" width="25" height="25"/>
+        <image name="SettingsIcon" width="25" height="25"/>
+    </resources>
+</document>
