@@ -107,7 +107,7 @@ class RatingsController: UIViewController
 
 	func AppstoreButtonClicked()
 	{
-		UIApplication.sharedApplication().openURL(NSURL(string: "itms-apps://itunes.apple.com/app/1128873606")!)
+		UIApplication.sharedApplication().openURL(NSURL(string: "https://itunes.apple.com/us/app/lennyface-keyboard/id1168423165?ls=1&mt=8")!)
 	}
 
 }
